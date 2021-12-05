@@ -23,7 +23,7 @@ public class BancoComunal {
 	private String nombre_banquito;
 	
 	@Column(name="ID_DISTRITO")
-	private int id_distrito;//relacion con la tabla distrito                              <?>
+	private int id_distrito;  //relacion con la tabla distrito                              <?>
 
 	public int getId_banquito() {
 		return id_banquito;
