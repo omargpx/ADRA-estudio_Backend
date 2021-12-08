@@ -29,24 +29,4 @@ public class BancoComunal implements Serializable {
         return id_banco_comunal;
     }
 
-    public void setId_banquito(int id_banquito) {
-        this.id_banco_comunal = id_banquito;
-    }
-
-    public String getNombre_banquito() {
-        return NO_BANCO_COMUNAL;
-    }
-
-    public void setNombre_banquito(String nombre_banquito) {
-        this.NO_BANCO_COMUNAL = nombre_banquito;
-    }
-
-    public int getId_distrito() {
-        return id_distrito;
-    }
-
-    public void setId_distrito(int id_distrito) {
-        this.id_distrito = id_distrito;
-    }
-
 }

@@ -39,6 +39,4 @@ public class Usuario implements Serializable{
 		this.clave = clave;
 	}
 	
-	
-
 }

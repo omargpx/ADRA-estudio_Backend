@@ -114,7 +114,7 @@ public class BanquitoController {
             return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
         }
         try {
-            bancoComunalService.save(data);
+            bancoComunalService.delete(data);
             result.put("success", true);
             result.put("message", "Se ha eliminado los datos del registro.");
             result.put("result", data);
