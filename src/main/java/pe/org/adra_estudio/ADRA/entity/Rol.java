@@ -4,6 +4,7 @@
  */
 package pe.org.adra_estudio.ADRA.entity;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "TMA_ROL")
-public class Rol {
+public class Rol implements Serializable {
 
     @Id
     @Column(name = "id_rol")
@@ -27,6 +28,9 @@ public class Rol {
 
     @Column(name = "no_rol")
     private String no_rol;
+
+    @Column(name = "img_icon")
+    private String img;
 
     public int getId_rol() {
         return id_rol;
@@ -44,4 +48,11 @@ public class Rol {
         this.no_rol = no_rol;
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+
+    }
 }

@@ -19,10 +19,11 @@ import pe.org.adra_estudio.ADRA.service.BancoComunalService;
 import pe.org.adra_estudio.ADRA.entity.BancoComunal;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
-//@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("api/banco_comunal")
+@RequestMapping("api/bancoComunal")
 @Api(value = "Gestion de Banquitos Comunales", description = "Microservicio de Banquito Comunal")
 public class BanquitoController {
 

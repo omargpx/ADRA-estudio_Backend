@@ -17,5 +17,8 @@ public interface PersonaRepo extends CrudRepository<Persona, Integer> {
 
     @Query("SELECT c FROM Persona c WHERE (NU_DNI like %:query% or ID_PERSONA like %:query%)")
     Page<Persona> findAllParams(String query, Pageable pageable);
+    
+    //buscar persona por el dni
+    public Persona findByNUDNI(int dni);
 
 }

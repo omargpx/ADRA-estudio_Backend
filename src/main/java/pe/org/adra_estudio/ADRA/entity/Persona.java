@@ -34,7 +34,7 @@ public class Persona implements Serializable{
 	private int telefonoPersona;
 	
 	@Column(name="NU_DNI")
-	private int NU_DNI;
+	private int NUDNI;
 	
 	@Column(name="DI_PERSONA") 
 	private String direccionPersona;
@@ -88,11 +88,11 @@ public class Persona implements Serializable{
 	}
 
 	public int getDNIpersona() {
-		return NU_DNI;
+		return NUDNI;
 	}
 
 	public void setDNIpersona(int dNIpersona) {
-		NU_DNI = dNIpersona;
+		NUDNI = dNIpersona;
 	}
 
 	public String getDireccionPersona() {

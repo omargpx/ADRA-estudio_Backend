@@ -18,5 +18,8 @@ public interface PersonaService {
     public List<Persona> findAll(String query, String sortBy);
 
     public HashMap<String, Object> findAll(String query, int page, int limit, String sortBy);
+    
+    //buscar por DNI
+    public Persona findByNUDNI(int nu_dni);
 
 }
