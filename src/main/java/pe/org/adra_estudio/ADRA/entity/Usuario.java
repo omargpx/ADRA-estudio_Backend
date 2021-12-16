@@ -1,5 +1,6 @@
 package pe.org.adra_estudio.ADRA.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -66,6 +67,5 @@ public class Usuario implements Serializable {
     public void setRoles(List<Rol> roles) {
         this.roles = roles;
     }
-    
 
 }
